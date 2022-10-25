@@ -1,2 +1,2 @@
 # RegistroANS
-Receber arquivo Excel com conteúdo para registro de produto na ANS e gera um XML a ser enviado
+Recebe um arquivo Excel com conteudo para registro de produto junto a ANS e gera um XML a ser enviado.
