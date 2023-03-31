@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RPI_Operadora xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegistroANS>355097</RegistroANS>
+  <CnpjOperadora>43293604000186</CnpjOperadora>
+  <Solicitacao>
+    <NossoNumero />
+    <IsencaoOnus>S</IsencaoOnus>
+    <InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>08961574825</CnpjCpf>
+        <Cnes>0466840</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>ARMANDO GERALDO FRANCHINI MELANI</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>07631776792</CnpjCpf>
+        <Cnes>1002198</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>BIANCA BARONE</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>55272550706</CnpjCpf>
+        <Cnes>1015338</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>GILBERTO DO AMARAL TEIXEIRA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>04528701782</CnpjCpf>
+        <Cnes>1018108</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>ANDRE BEZERRA DE PINHO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>24560278768</CnpjCpf>
+        <Cnes>1030590</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330170</CodigoMunicipioIBGE>
+        <RazaoSocial>GERALDO RONAN ALVES MACHADO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>09129859760</CnpjCpf>
+        <Cnes>1048368</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>PATRICIA FERNANDES DUTRA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>00126009708</CnpjCpf>
+        <Cnes>1050281</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330170</CodigoMunicipioIBGE>
+        <RazaoSocial>CRISTIANE FONTES GARCIA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>82070709787</CnpjCpf>
+        <Cnes>1059823</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>FERNANDA NORONHA MAIA MATOS</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>01057498777</CnpjCpf>
+        <Cnes>1066161</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>MARGARETE OLIVEIRA BATISTA HENRIQUES</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>95316515749</CnpjCpf>
+        <Cnes>2876752</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>LEONARDO JOSE DA GAMA CANSANCAO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>77831977791</CnpjCpf>
+        <Cnes>5286700</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330170</CodigoMunicipioIBGE>
+        <RazaoSocial>SHEYLA NETO FIGUEIREDO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>02802936743</CnpjCpf>
+        <Cnes>7644728</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>ERIKA TIEMI IRIE CERQUEIRA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>09013463738</CnpjCpf>
+        <Cnes>7862008</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>BIANCA NOLETO AYRES GUIMARAES</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>87195844749</CnpjCpf>
+        <Cnes>7887779</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>LILIANE DAVID MIZRAHI SUSTER</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>02692205774</CnpjCpf>
+        <Cnes>9084932</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>MARCOS ALEXANDRE BALIEIRO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>05296364767</CnpjCpf>
+        <Cnes>9458840</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>PAULA DO NASCIMENTO MAIA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>86765337768</CnpjCpf>
+        <Cnes>9508694</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>PAULO ROBERTO GAUDIO</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>80699294720</CnpjCpf>
+        <Cnes>9508929</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>VANIA DANTAS DE MOURA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>02399014790</CnpjCpf>
+        <Cnes>9557423</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>PAULA PERUZZI ELIA – ENDOSCOPIA PEDIÁTRICA</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>12440452769</CnpjCpf>
+        <Cnes>9618112</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330170</CodigoMunicipioIBGE>
+        <RazaoSocial>RAQUEL OTTONI SIMAS</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+      <RPI_InclusaoPrestador>
+        <Classificacao>3</Classificacao>
+        <CnpjCpf>02439708704</CnpjCpf>
+        <Cnes>0035971</Cnes>
+        <Uf>RJ</Uf>
+        <CodigoMunicipioIBGE>330455</CodigoMunicipioIBGE>
+        <RazaoSocial>FLAVIA SOUZA DOS SANTOS</RazaoSocial>
+        <RelacaoOperadora>C</RelacaoOperadora>
+        <TipoContratualizacao>D</TipoContratualizacao>
+        <RegistroANSOperadoraIntermediaria />
+        <DataContratualizacao>2022-08-10T00:00:00</DataContratualizacao>
+        <DataInicioPrestacaoServico>2022-08-10T00:00:00</DataInicioPrestacaoServico>
+        <DisponibilidadeServico>P</DisponibilidadeServico>
+        <UrgenciaEmergencia>N</UrgenciaEmergencia>
+        <Vinculacao>
+          <NumeroRegistroPlanoVinculacao />
+          <CodigoPlanoOperadoraVinculacao />
+        </Vinculacao>
+      </RPI_InclusaoPrestador>
+    </InclusaoPrestador>
+  </Solicitacao>
+</RPI_Operadora>

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RegistroANS": {
+      "commandName": "Project",
+      "commandLineArgs": "rpi .\\Examples\\Exemplo_RPI.xlsx",
+      "workingDirectory": "C:\\Users\\elcio\\Dev\\RegistroANS"
+    }
+  }
+}
