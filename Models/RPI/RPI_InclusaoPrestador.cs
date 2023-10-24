@@ -6,16 +6,31 @@ namespace RegistroANS.Models.RPI;
 public class RPI_InclusaoPrestador
 {
     [XmlIgnore]
-    public DateTime dataContratualizacao { get; set; }
+    private DateTime dataContratualizacao { get; set; }
     [XmlIgnore]
     public DateTime dataInicioPrestacaoServico { get; set; }
+    [XmlIgnore]
+    private string classificacao { get; set; } = null!;
 
     public RPI_InclusaoPrestador()
     {
         Vinculacao = new RPI_Vinculacao();
     }
 
-    public string Classificacao { get; set; } = null!;
+    public string Classificacao
+    {
+        get
+        {
+            return this.classificacao;
+        }
+        set
+        {
+            if (new[] { "1", "2", "3" }.Contains(value))
+                this.classificacao = value;
+            else
+                this.classificacao = "#";
+        }
+    }
     public string CnpjCpf { get; set; } = null!;
     public string Cnes { get; set; } = null!;
     public string Uf { get; set; } = null!;

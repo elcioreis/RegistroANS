@@ -5,6 +5,7 @@ using System.Xml.Serialization;
 namespace RegistroANS.Generator;
 internal class RPIGenerator
 {
+    const string diretorio = "Saida";
     public RPIGenerator(string origin, string destination = "")
     {
         if (File.Exists(origin))
@@ -58,9 +59,14 @@ internal class RPIGenerator
 
                 operadora.Solicitacao = solicitacao;
 
+                if (!Directory.Exists(diretorio))
+                {
+                    Directory.CreateDirectory(diretorio);
+                }
+
                 if (string.IsNullOrEmpty(destination))
                 {
-                    destination = "Operadora_" + operadora.RegistroANS + "_" + DateTime.Now.ToString("yyMMdd_HHmmss") + ".rpi";
+                    destination = diretorio + "\\" + "RPI_" + operadora.RegistroANS + "_" + DateTime.Now.ToString("yyMMdd_HHmmss") + ".rpi";
                 }
 
                 // Cria um namespace para a saída

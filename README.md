@@ -7,3 +7,6 @@ Para a geração do arquivo RPI o Excel deverá conter a primeira planilha com a
 
 As colunas são as seguintes:
 registroANS, cnpjOperadora, nossoNumero, isencaoOnus, classificacao, cnpjCpf, cnes, uf, codigoMunicipioIBGE, razaoSocial, relacaoOperadora, tipoContratualizacao, registroANSOperadoraIntermediaria, dataContratualizacao, dataInicioPrestacaoServico, disponibilidadeServic, urgenciaEmergencia, numeroRegistroPlanoVinculacao, codigoPlanoOperadoraVinculacao
+
+Versão 0.0.0.1
+	Inclusão de validação dos dados da RPI, incluindo cálculo de CNPJ e CPF
