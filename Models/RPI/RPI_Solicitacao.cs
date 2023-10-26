@@ -10,7 +10,10 @@ public class RPI_Solicitacao
         InclusaoPrestador = new List<RPI_InclusaoPrestador>();
     }
 
+    [XmlElement(ElementName = "nossoNumero")]
     public string NossoNumero { get; set; } = null!;
+
+    [XmlElement(ElementName = "isencaoOnus")]
     public string IsencaoOnus
     {
         get
@@ -26,6 +29,6 @@ public class RPI_Solicitacao
         }
     }
 
-    [XmlElement(ElementName = "InclusaoPrestador", Type = typeof(RPI_InclusaoPrestador))]
+    [XmlElement(ElementName = "inclusaoPrestador", Type = typeof(RPI_InclusaoPrestador))]
     public List<RPI_InclusaoPrestador> InclusaoPrestador { get; set; } = null!;
 }
