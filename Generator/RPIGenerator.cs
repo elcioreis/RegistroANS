@@ -42,8 +42,6 @@ internal class RPIGenerator
 
                 for (var i = 2; i <= totalLinhas; i++)
                 {
-                    //string status = planilha.Cell($"T{i}").Value.ToString().ToLower();
-                    //var cell = planilha.Cell($"T{i}").Value;
                     var row = planilha.Row(i);
 
                     if (!row.IsHidden)
