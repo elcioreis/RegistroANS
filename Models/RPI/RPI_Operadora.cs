@@ -1,13 +1,58 @@
-﻿using System.Xml.Serialization;
+﻿using RegistroANS.Tools;
+using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 
 namespace RegistroANS.Models.RPI;
 
 
 //[XmlRoot("Operadora")]
-[XmlType(TypeName = "Operadora")]
+[XmlType(TypeName = "operadora")]
 public class RPI_Operadora
 {
-    public string RegistroANS { get; set; } = null!;
-    public string CnpjOperadora { get; set; } = null!;
-    public RPI_Solicitacao Solicitacao { get; set; } = null!;
+    [XmlIgnore]
+    private string _cnpjOperadora { get; set; } = null!;
+    [XmlIgnore]
+    private string _registroANS { get; set; } = null!;
+
+    [XmlElement(ElementName = "registroANS")]
+    public string RegistroANS
+    {
+        get
+        {
+            return this._registroANS;
+        }
+        set
+        {
+            // Se o parâmetro tiver tamanho diferente de 06 não aceita a informação
+            if (value.Length != 6)
+                this._registroANS = new string('#', 6);
+
+            // Retira qualquer caractere não numérico do parâmetro e coloca os dígitos na variável registro
+            var registro = Regex.Replace(value, "[^0-9]+", "");
+
+            // Se a variável tiver qualquer tamanho diferente de 06 não aceita a informação
+            if (registro.Length != 6)
+                this._registroANS = new string('#', 6);
+            else
+                this._registroANS = registro;
+        }
+    }
+
+    [XmlElement(ElementName = "cnpjOperadora")]
+    public string CnpjOperadora
+    {
+        get
+        {
+            return this._cnpjOperadora;
+        }
+        set
+        {
+            if (Validator.CNPJ(value))
+                this._cnpjOperadora = value;
+            else
+                this._cnpjOperadora = new String('#', 14);
+        }
+    }
+
+    public RPI_Solicitacao solicitacao { get; set; } = null!;
 }
