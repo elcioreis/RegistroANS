@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
-namespace RegistroANS.Models.RPI;
+namespace RegistroANS.Models.RPE;
 
 
 //[XmlRoot("Operadora")]

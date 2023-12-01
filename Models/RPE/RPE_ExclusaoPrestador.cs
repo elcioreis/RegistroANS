@@ -2,15 +2,14 @@
 
 namespace RegistroANS.Models.RPE;
 
-[XmlType(TypeName = "InclusaoPrestador")]
+[XmlType(TypeName = "ExclusaoPrestador")]
 public class RPE_ExclusaoPrestador
 {
-    [XmlElement(ElementName = "cnpjCpf")]
-    public string CnpjCpf { get; set; } = null!;
+    public RPE_ExclusaoPrestador()
+    {
+        Identificacao = new List<RPE_Identificacao>();
+    }
 
-    [XmlElement(ElementName = "cnes")]
-    public string Cnes { get; set; } = null!;
-
-    [XmlElement(ElementName = "codigoMunicipioIBGE")]
-    public string CodigoMunicipioIBGE { get; set; } = null!;
+    [XmlElement(ElementName = "identificacao", Type = typeof(RPE_Identificacao))]
+    public List<RPE_Identificacao> Identificacao { get; set; } = null!;
 }

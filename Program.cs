@@ -25,7 +25,11 @@ class Program
             switch (type)
             {
                 case "rpi":
-                    var generator = new RPIGenerator(inputFile, outputFile);
+                    // gera arquivo de inclusão de rede prestadora
+                    var inclusao = new RPIGenerator(inputFile, outputFile);
+                    break;
+                case "rpe":
+                    var exclusao = new RPEGenerator(inputFile, outputFile);
                     break;
                 default:
                     break;
@@ -39,6 +43,6 @@ class Program
 
         Console.WriteLine("Utilização:");
         Console.WriteLine($"{execName} TIPO <ArquivoOrigem.xlsx> [ArquivoDestino]");
-        Console.WriteLine("Onde o tipo pode ser: RPI");
+        Console.WriteLine("Onde o tipo pode ser: RPI ou RPE");
     }
 }
