@@ -50,15 +50,24 @@ internal class RPIGenerator
 
                         inclusao.Classificacao = planilha.Cell($"E{i}").Value.ToString();
                         inclusao.CnpjCpf = planilha.Cell($"F{i}").Value.ToString();
-                        inclusao.Cnes = planilha.Cell($"G{i}").Value.ToString().PadLeft(7, '0');
+                        if (!string.IsNullOrEmpty(planilha.Cell($"G{i}").Value.ToString()))
+                        {
+                            inclusao.Cnes = planilha.Cell($"G{i}").Value.ToString().PadLeft(7, '0');
+                        }
                         inclusao.Uf = planilha.Cell($"H{i}").Value.ToString();
                         inclusao.CodigoMunicipioIBGE = planilha.Cell($"I{i}").Value.ToString().Substring(0, 6);
                         inclusao.RazaoSocial = planilha.Cell($"J{i}").Value.ToString();
                         inclusao.RelacaoOperadora = planilha.Cell($"K{i}").Value.ToString();
                         inclusao.TipoContratualizacao = planilha.Cell($"L{i}").Value.ToString();
                         inclusao.RegistroANSOperadoraIntermediaria = planilha.Cell($"M{i}").Value.ToString();
-                        inclusao.DataContratualizacao = planilha.Cell($"N{i}").Value.ToString();
-                        inclusao.DataInicioPrestacaoServico = planilha.Cell($"O{i}").Value.ToString();
+                        if (!string.IsNullOrEmpty(planilha.Cell($"N{i}").Value.ToString()))
+                        {
+                            inclusao.DataContratualizacao = planilha.Cell($"N{i}").Value.ToString();
+                        }
+                        if (!string.IsNullOrEmpty(planilha.Cell($"O{i}").Value.ToString()))
+                        {
+                            inclusao.DataInicioPrestacaoServico = planilha.Cell($"O{i}").Value.ToString();
+                        }
                         inclusao.DisponibilidadeServico = planilha.Cell($"P{i}").Value.ToString();
                         inclusao.UrgenciaEmergencia = planilha.Cell($"Q{i}").Value.ToString();
                         inclusao.Vinculacao.NumeroRegistroPlanoVinculacao = planilha.Cell($"R{i}").Value.ToString();
@@ -96,9 +105,10 @@ internal class RPIGenerator
                     using (var writer = new StreamWriter(destination))
                     {
                         writer.WriteLine(sw.ToString()
-                            .Replace("utf-8", "UTF-8")
-                            .Replace("  ", "\t")
-                            .Replace(" /", "/"));
+                              .Replace("utf-8", "UTF-8")
+                              .Replace("  ", "\t")
+                              .Replace(" /", "/"));
+                        //.Replace("01/01/0001", ""));
                     }
                 }
 
