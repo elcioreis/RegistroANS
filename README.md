@@ -13,9 +13,10 @@ Notas sobre arquivos RPI de entrada (arquivo Excel)
 	(19 colunas), a primeira linha será considerada cabeçalho
 
 	As colunas são as seguintes:
-	registroANS, cnpjOperadora, nossoNumero, isencaoOnus, classificacao, cnpjCpf, cnes, uf, codigoMunicipioIBGE, 
-	razaoSocial, relacaoOperadora, tipoContratualizacao, registroANSOperadoraIntermediaria, dataContratualizacao, 
-	dataInicioPrestacaoServico, disponibilidadeServic, urgenciaEmergencia, numeroRegistroPlanoVinculacao, 
+	registroANS, cnpjOperadora, nossoNumero, isencaoOnus, classificacao, cnpjCpf, cnes, uf, 
+	codigoMunicipioIBGE, razaoSocial, relacaoOperadora, tipoContratualizacao, 
+	registroANSOperadoraIntermediaria, dataContratualizacao, 	dataInicioPrestacaoServico,
+	disponibilidadeServic, urgenciaEmergencia, numeroRegistroPlanoVinculacao, 
 	codigoPlanoOperadoraVinculacao
 
 Notas sobre arquivos RPE de entrada (arquivo Excel)
