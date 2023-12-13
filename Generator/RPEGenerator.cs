@@ -1,14 +1,14 @@
 ﻿using ClosedXML.Excel;
-using RegistroANS.Models.RPI;
+using RegistroANS.Models.RPE;
 using RegistroANS.Tools;
 using System.Xml;
 using System.Xml.Serialization;
 
 namespace RegistroANS.Generator;
-internal class RPIGenerator
+internal class RPEGenerator
 {
     const string diretorio = "Saida";
-    public RPIGenerator(string origin, string destination = "")
+    public RPEGenerator(string origin, string destination = "")
     {
         if (File.Exists(origin))
         {
@@ -31,14 +31,12 @@ internal class RPIGenerator
 
                 Console.WriteLine($"Total de {totalLinhas - 1} linhas no arquivo");
 
-                var operadora = new RPI_Operadora();
+                var operadora = new RPE_Operadora();
 
                 operadora.RegistroANS = planilha.Cell("A2").Value.ToString();
                 operadora.CnpjOperadora = planilha.Cell("B2").Value.ToString();
 
-                var solicitacao = new RPI_Solicitacao();
-                solicitacao.NossoNumero = planilha.Cell("C2").Value.ToString();
-                solicitacao.IsencaoOnus = planilha.Cell("D2").Value.ToString();
+                var solicitacao = new RPE_Solicitacao();
 
                 for (var i = 2; i <= totalLinhas; i++)
                 {
@@ -46,33 +44,15 @@ internal class RPIGenerator
 
                     if (!row.IsHidden)
                     {
-                        var inclusao = new RPI_InclusaoPrestador();
+                        var identificacao = new RPE_Identificacao();
 
-                        inclusao.Classificacao = planilha.Cell($"E{i}").Value.ToString();
-                        inclusao.CnpjCpf = planilha.Cell($"F{i}").Value.ToString();
-                        if (!string.IsNullOrEmpty(planilha.Cell($"G{i}").Value.ToString()))
-                        {
-                            inclusao.Cnes = planilha.Cell($"G{i}").Value.ToString().PadLeft(7, '0');
-                        }
-                        inclusao.Uf = planilha.Cell($"H{i}").Value.ToString();
-                        inclusao.CodigoMunicipioIBGE = planilha.Cell($"I{i}").Value.ToString().Substring(0, 6);
-                        inclusao.RazaoSocial = planilha.Cell($"J{i}").Value.ToString();
-                        inclusao.RelacaoOperadora = planilha.Cell($"K{i}").Value.ToString();
-                        inclusao.TipoContratualizacao = planilha.Cell($"L{i}").Value.ToString();
-                        inclusao.RegistroANSOperadoraIntermediaria = planilha.Cell($"M{i}").Value.ToString();
-                        if (!string.IsNullOrEmpty(planilha.Cell($"N{i}").Value.ToString()))
-                        {
-                            inclusao.DataContratualizacao = planilha.Cell($"N{i}").Value.ToString();
-                        }
-                        if (!string.IsNullOrEmpty(planilha.Cell($"O{i}").Value.ToString()))
-                        {
-                            inclusao.DataInicioPrestacaoServico = planilha.Cell($"O{i}").Value.ToString();
-                        }
-                        inclusao.DisponibilidadeServico = planilha.Cell($"P{i}").Value.ToString();
-                        inclusao.UrgenciaEmergencia = planilha.Cell($"Q{i}").Value.ToString();
-                        inclusao.Vinculacao.NumeroRegistroPlanoVinculacao = planilha.Cell($"R{i}").Value.ToString();
-                        inclusao.Vinculacao.CodigoPlanoOperadoraVinculacao = planilha.Cell($"S{i}").Value.ToString();
-                        solicitacao.InclusaoPrestador.Add(inclusao);
+                        identificacao.CnpjCpf = planilha.Cell($"C{i}").Value.ToString();
+                        identificacao.Cnes = planilha.Cell($"D{i}").Value.ToString().PadLeft(7, '0');
+                        identificacao.CodigoMunicipioIBGE = planilha.Cell($"E{i}").Value.ToString().Substring(0, 6);
+
+                        var exclusao = new RPE_ExclusaoPrestador();
+                        exclusao.Identificacao.Add(identificacao);
+                        solicitacao.ExclusaoPrestador.Add(exclusao);
                         exportadas++;
                     }
                     else
@@ -90,7 +70,7 @@ internal class RPIGenerator
 
                 if (string.IsNullOrEmpty(destination))
                 {
-                    destination = diretorio + "\\" + "C" + operadora.RegistroANS + "_" + DateTime.Now.ToString("yyMMddHHmm") + ".rpi";
+                    destination = diretorio + "\\" + "C" + operadora.RegistroANS + "_" + DateTime.Now.ToString("yyMMddHHmm") + ".rpe";
                 }
 
                 using (var sw = new Utf8StringWriter())
@@ -99,16 +79,15 @@ internal class RPIGenerator
                     xw.WriteStartDocument(true);
                     var ns = new XmlSerializerNamespaces();
                     ns.Add(string.Empty, string.Empty);
-                    var serializer = new XmlSerializer(typeof(RPI_Operadora));
+                    var serializer = new XmlSerializer(typeof(RPE_Operadora));
                     serializer.Serialize(xw, operadora, ns);
 
                     using (var writer = new StreamWriter(destination))
                     {
                         writer.WriteLine(sw.ToString()
-                              .Replace("utf-8", "UTF-8")
-                              .Replace("  ", "\t")
-                              .Replace(" /", "/"));
-                        //.Replace("01/01/0001", ""));
+                            .Replace("utf-8", "UTF-8")
+                            .Replace("  ", "\t")
+                            .Replace(" /", "/"));
                     }
                 }
 
@@ -119,7 +98,7 @@ internal class RPIGenerator
 
                 var validator = new XMLValidator();
 
-                if (validator.Validate(destination, Enums.RPSTypes.RPI))
+                if (validator.Validate(destination, Enums.RPSTypes.RPE))
                 {
                     Console.WriteLine($"Arquivo \"{destination}\" válido conforme arquivo de Schema");
                 }
@@ -130,12 +109,12 @@ internal class RPIGenerator
             }
             catch (IOException ex)
             {
-                Console.WriteLine("Problemas ao tentar gravar o arquivo RPI");
+                Console.WriteLine("Problemas ao tentar gravar o arquivo RPE");
                 Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Problemas ao tentar gerar o arquivo RPI");
+                Console.WriteLine("Problemas ao tentar gerar o arquivo RPE");
                 Console.WriteLine(ex.Message);
             }
         }

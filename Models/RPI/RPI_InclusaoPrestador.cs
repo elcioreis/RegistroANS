@@ -6,9 +6,11 @@ namespace RegistroANS.Models.RPI;
 public class RPI_InclusaoPrestador
 {
     [XmlIgnore]
-    private DateTime dataContratualizacao { get; set; }
+    private string? cnes { get; set; }
     [XmlIgnore]
-    public DateTime dataInicioPrestacaoServico { get; set; }
+    private DateTime? dataContratualizacao { get; set; }
+    [XmlIgnore]
+    public DateTime? dataInicioPrestacaoServico { get; set; }
     [XmlIgnore]
     private string classificacao { get; set; } = null!;
 
@@ -37,7 +39,24 @@ public class RPI_InclusaoPrestador
     public string CnpjCpf { get; set; } = null!;
 
     [XmlElement(ElementName = "cnes")]
-    public string Cnes { get; set; } = null!;
+    public string Cnes
+    {
+        get
+        {
+            if (!string.IsNullOrEmpty(this.cnes))
+            {
+                return this.cnes.ToString();
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
+        set
+        {
+            this.cnes = value;
+        }
+    }
 
     [XmlElement(ElementName = "uf")]
     public string Uf { get; set; } = null!;
@@ -60,14 +79,39 @@ public class RPI_InclusaoPrestador
     [XmlElement(ElementName = "dataContratualizacao")]
     public string DataContratualizacao
     {
-        get { return this.dataContratualizacao.ToString("dd/MM/yyyy"); }
+        get
+        {
+            if (this.dataContratualizacao != null)
+            {
+#pragma warning disable CS8603 // Possível retorno de referência nula.
+                return this.dataContratualizacao?.ToString("dd/MM/yyyy");
+#pragma warning restore CS8603 // Possível retorno de referência nula.
+            }
+            else
+            {
+                return "";
+            }
+        }
         set { this.dataContratualizacao = DateTime.Parse(value); }
     }
 
     [XmlElement(ElementName = "dataInicioPrestacaoServico")]
     public string DataInicioPrestacaoServico
     {
-        get { return this.dataInicioPrestacaoServico.ToString("dd/MM/yyyy"); }
+        get
+        {
+            if (this.dataInicioPrestacaoServico != null)
+            {
+#pragma warning disable CS8603 // Possível retorno de referência nula.
+                return this.dataInicioPrestacaoServico?.ToString("dd/MM/yyyy");
+#pragma warning restore CS8603 // Possível retorno de referência nula.
+            }
+            else
+            {
+                return "";
+            }
+
+        }
         set { this.dataInicioPrestacaoServico = DateTime.Parse(value); }
     }
 

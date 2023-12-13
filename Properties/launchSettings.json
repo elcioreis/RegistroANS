@@ -2,7 +2,7 @@
   "profiles": {
     "RegistroANS": {
       "commandName": "Project",
-      "commandLineArgs": "rpi .\\Entrada\\RPI\\RPI_ACS_20231101_Completo.xlsx",
+      "commandLineArgs": "rpe .\\Entrada\\RPE\\RPE_ACS_20231201.xlsx",
       "workingDirectory": "C:\\Users\\elcio\\Dev\\RegistroANS"
     }
   }
